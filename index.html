@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>File Path Heading</title>
+</head>
+<body>
+
+  <h1 id="filename">index.html</h1>
+
+  <script>
+    // Get the current file name (assuming this script is in the head of the document)
+    var currentFileName = window.location.pathname.split('/').pop();
+
+    // Set the content of the h1 element to the actual file name
+    document.getElementById('filename').innerText = currentFileName;
+  </script>
+  
+</body>
+</html>
